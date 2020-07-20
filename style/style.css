@@ -1,0 +1,91 @@
+body
+{
+	margin: 0;
+}
+
+.container
+{
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navigation
+{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo
+{
+    width: 70px;
+    padding-top: 40px;
+    z-index: 2;
+    border-radius: 30px;
+}
+.menu
+{
+	background: url("../images/background.jpg") no-repeat;
+    width: 100%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.element_navigation
+{
+	margin: 0 30px 0 30px;
+	font: 12px Open Sans, Sans-serif;
+	text-decoration: none;
+	color: #000;
+	display: block;
+    box-sizing: border-box;
+}
+
+.element_navigation:hover
+{
+	border-bottom: solid;
+	border-bottom-height: 5px;
+	color: red;
+}
+
+.language
+{
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 25px;
+    height: 33px;
+    text-decoration: none;
+    border-color: white;
+    font: 12px Open Sans, Sans-serif;
+}
+
+.language:hover
+{
+	border-color: red;
+	cursor: pointer;
+}
+
+.entry
+{ 
+	font: 12px Open Sans, Sans-serif;
+	background-color: red;
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
+    border-color: red;
+    text-decoration: none;
+}
+
+.entry:hover
+{
+	cursor: pointer;
+}
+
+.entry_link
+{
+	text-decoration: none;
+	color: #000;
+}
