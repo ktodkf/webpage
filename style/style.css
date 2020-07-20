@@ -25,13 +25,13 @@ body
     z-index: 2;
     border-radius: 30px;
 }
-.menu
+.main_title
 {
 	background: url("../images/background.jpg") no-repeat;
     width: 100%;
+    height: 90%;
 	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
+	border-bottom-right-radius: 150px;
 }
 
 .element_navigation
@@ -48,7 +48,7 @@ body
 {
 	border-bottom: solid;
 	border-bottom-height: 5px;
-	color: red;
+	color: #DC143C;
 }
 
 .language
@@ -64,18 +64,18 @@ body
 
 .language:hover
 {
-	border-color: red;
+	border-color: #DC143C;
 	cursor: pointer;
 }
 
 .entry
 { 
 	font: 12px Open Sans, Sans-serif;
-	background-color: red;
+	background-color: #DC143C;
     border-radius: 10px;
     width: 90px;
     height: 25px;
-    border-color: red;
+    border-color: #DC143C;
     text-decoration: none;
 }
 
@@ -88,4 +88,42 @@ body
 {
 	text-decoration: none;
 	color: #000;
+}
+
+.color_text
+{
+	color: #DC143C;
+}
+
+h1
+{
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 15%;
+	width: 50%;
+	font: 700 42px Open Sans, Sans-serif;
+	margin-bottom: 10px;
+}
+
+.menu_text
+{
+	text-align: left;
+	position: relative;
+	top: 15%;
+	width: 40%;
+	font: 16px Open Sans, Sans-serif;
+	margin-left: 90px;
+	margin-top: 0;
+}
+
+.menu
+{
+	display: flex;
+	top: 80%;
+}
+
+.menu_element
+{
+	background: url("../images/menu_element_first") no-repeat;
 }
