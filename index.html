@@ -9,21 +9,22 @@
 </head>
 
 <body>
-  <div class="navigation">
-    <a href="" class="element_navigation">Меню</a>
-    <a href="" class="element_navigation">Доставка и оплата</a>
-    <a href="" class="element_navigation">Отзывы</a>
-    <img src="images/logo.jpg" class="logo">
-    <a href="" class="element_navigation">О нас</a>
-    <a href="" class="element_navigation">Контакты</a>
-    <button class="language">Ru</button>
-    <button class="entry"><a href="" class="entry_link">Войти</a></button>
-  </div>
-  <div class="slider">
-    <div class="slider_two">
-      <div class="container">
-
-        <div class="main_title">
+  <div class="white">
+    <div class="navigation">
+      <a href="" class="element_navigation">Меню</a>
+      <a href="" class="element_navigation">Доставка и оплата</a>
+      <a href="" class="element_navigation">Отзывы</a>
+      <img src="images/logo.jpg" class="logo">
+      <a href="" class="element_navigation">О нас</a>
+      <a href="" class="element_navigation">Контакты</a>
+      <button class="language">Ru</button>
+      <button class="entry"><a href="" class="entry_link">Войти</a></button>
+    </div>
+    <div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/background.jpg" class="image_slide">
+        <div class="main_title" id="title">
           <h1><span class="color_text">Доставка</span> рационов <br>здорового питания</h1>
           <p class="menu_text">
             Экономьте время на покупке и готовке еды при этом питайтесь правильно и вкусно
@@ -39,38 +40,82 @@
               <button class="menu_name"><a href="" class="element_menu">Салаты</a><span class="right">&#8594</span></button>
             </div>
           </div>
-          <div class="buttons">
-            <button class="button">&#8592</button>
-            <button class="button">&#8594</button>
+          <div class="button">
+            <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+            <a class="next" onclick="plusSlides(1)">&#8594;</a>
           </div>
         </div>
       </div>
-      <div>
-        <img class="background2" src="images/background2.jpg">
-        <div class="buttons_two">
-          <button class="button_left">&#8592</button>
-          <button class="button">&#8594</button>
+
+      <div class="mySlides fade">
+        <img src="images/background2.jpg" class="image_slide">
+        <div class="button_two">
+          <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+          <a class="next" onclick="plusSlides(1)">&#8594;</a>
         </div>
       </div>
-      <div>
-        <img class="background3" src="images/background3.jpg">
-        <div class="buttons_two">
-          <button class="button">&#8592</button>
-          <button class="button">&#8594</button>
+      <div class="mySlides fade">
+        <img src="images/background4.jpg" class="image_slide">
+        <div class="button_two">
+          <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+          <a class="next" onclick="plusSlides(1)">&#8594;</a>
         </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/background2.jpg" class="image_slide">
+        <div class="button_two">
+          <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+          <a class="next" onclick="plusSlides(1)">&#8594;</a>
+        </div>
+      </div>
+
+
+    </div>
+    <br>
+
+    </div>
+    <img src="images/elements_img.png" class="image_green">
+    <img src="images/hotpng.com.png" class="image_lime">
+    <div class="content_button">
+      <div class="button_food">
+        <button class="program_one"><img src="images/diet.png" class="image_program">
+          <h5>Выберите программу</h5>
+          <span>Вы выбираете программу питания и оставляете заявку</span>
+        </button>
+        <button class="program_two"><img src="images/Chef.png" class="image_program">
+          <h5>Выберите программу</h5>
+          <span>Наши повара готовят Ваш рацион и раскладывают по порция</span>
+        </button>
+        <button class="program_three"><img src="images/delivery.png" class="image_program">
+          <h5>Подтвердите заказ</h5>
+          <span>Наш менеджер свяжется с вами в течении 20 минут</span>
+        </button>
+        <button class="program_four"><img src="images/fruit.png" class="image_program">
+          <h5>Натуральныу продукты без ГМО и химикатов</h5>
+          <span>Готовим еду из свежих и проверенных продуктов</span>
+        </button>
+      </div>
+      <div class="text_doso">
+        <h3>Как мы <span class="color_text">работаем</span> и что вы получаете</h3>
+        <p class="about_doso">Doso food - это сервис по доставке здорового сбалансированного питания, еды в контейнерах на несколько дней
+          или на неделею, подходит для людей, занимающихся спортом или просто выбирающих здоровый
+          образ жизни. НАверняка вы слышали фразуЖ "Мы - это то, что мы едим". И это
+          действительно так: от продуктов, которые мы употребляем, напрямую зависит наше здоровье. Именно
+          поэтому команда Doso food стремится к тому, чтобы наши клиенты ели только здоровую
+          и сбалансированную пищу</p>
+        <button class="about_us">О нас</button>
       </div>
     </div>
   </div>
-  <div>
-	<img src="images/elements_img.png" class="image_green">
-	  <img src="images/hotpng.com.png" class="image_lime">
-	  <button class="program_one"><img src="images/diet.png" class="image_program"><h5>Выберите программу</h5>
-		  <span>Вы выбираете программу питания и оставляете заявку</span></button>
-	  <button class="program_two"><img src="images/chef.jpg" class="image_program"><h5>Выберите программу</h5>
-	  <span>Наши повара готовят Ваш рацион и раскладывают по порция</span></button>
-	  <button class="program_three"><img src="" class="image_program"><h5>Подтвердите заказ</h5>
-	  <span>Наш менеджер свяжется с вами в течении 20 минут</span></button>
-	  <button class="program_four"><img src="" class="image_program"><h5>Натуральныу продукты без ГМО и химикатов</h5>
-	  <span>Готовим еду из свежих и проверенных продуктов</span></button>
+  <div class="main_menu">
+    <div class="title">
+      <span class="left_line"></span>
+      <h2 class="write">Выберите меню</h2>
+      <span class="right_line"></span>
+      <p class="text_title">Меню разработано на 28 дней. Каждый день разное блюдо.</p>
+    </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
+
+</html>
