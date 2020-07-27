@@ -6,13 +6,16 @@
   <title class="title">Doso Food</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <script src="js/index.js" defer></script>
+  <script src="js/script2.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <div class="white">
     <div class="navigation">
-      <a href="" class="element_navigation">Меню</a>
-      <a href="" class="element_navigation">Доставка и оплата</a>
+      <a href="#main_menu" class="element_navigation">Меню</a>
+      <a href="#maps_delivery" class="element_navigation">Доставка и оплата</a>
       <a href="" class="element_navigation">Отзывы</a>
       <img src="images/logo.jpg" class="logo">
       <a href="" class="element_navigation">О нас</a>
@@ -31,13 +34,13 @@
           </p>
           <div class="menu">
             <div class="menu_element_first">
-              <button class="menu_name"><a href="" class="element_menu">Выпечка</a><span class="right">&#8594</span></button>
+              <button class="menu_name"><a href="#main_menu" class="element_menu">Выпечка</a><span class="right">&#8594</span></button>
             </div>
             <div class="menu_element_second">
-              <button class="menu_name"><a href="" class="element_menu">Гарниры</a><span class="right">&#8594</span></button>
+              <button class="menu_name"><a href="#main_menu" class="element_menu">Гарниры</a><span class="right">&#8594</span></button>
             </div>
             <div class="menu_element_three">
-              <button class="menu_name"><a href="" class="element_menu">Салаты</a><span class="right">&#8594</span></button>
+              <button class="menu_name"><a href="#main_menu" class="element_menu">Салаты</a><span class="right">&#8594</span></button>
             </div>
           </div>
           <div class="button">
@@ -46,7 +49,6 @@
           </div>
         </div>
       </div>
-
       <div class="mySlides fade">
         <img src="images/background2.jpg" class="image_slide">
         <div class="button_two">
@@ -68,11 +70,8 @@
           <a class="next" onclick="plusSlides(1)">&#8594;</a>
         </div>
       </div>
-
-
     </div>
     <br>
-
     </div>
     <img src="images/elements_img.png" class="image_green">
     <img src="images/hotpng.com.png" class="image_lime">
@@ -91,7 +90,7 @@
           <span>Наш менеджер свяжется с вами в течении 20 минут</span>
         </button>
         <button class="program_four"><img src="images/fruit.png" class="image_program">
-          <h5>Натуральныу продукты без ГМО и химикатов</h5>
+          <h5>Натуральные продукты без ГМО и химикатов</h5>
           <span>Готовим еду из свежих и проверенных продуктов</span>
         </button>
       </div>
@@ -107,15 +106,446 @@
       </div>
     </div>
   </div>
-  <div class="main_menu">
+  <div class="main_menu" id="main_menu">
     <div class="title">
       <span class="left_line"></span>
       <h2 class="write">Выберите меню</h2>
       <span class="right_line"></span>
       <p class="text_title">Меню разработано на 28 дней. Каждый день разное блюдо.</p>
     </div>
+    <div class="choosing_menu">
+      <div class="days">
+        <div class="block_day">
+          <button class="day"  id="5_days">5 <span class="word_day"> дней </button>
+        </div>
+        <div class="block_day">
+          <button class="day" id="7_days">7 <br> <span class="word_day"> дней </button>
+        </div>
+        <div class="block_day">
+          <button class="day" id="10_days">10 <br> <span class="word_day"> дней</span> </button>
+        </div>
+      </div>
+      <div class="button_three">
+        <a class="prev_two" id="leftBtn" onclick="slide()">&#8592;</a>
+        <a class="next_two" id="rightBtn" onclick="slide()">&#8594;</a>
+      </div>
+      <div id="five_days">
+        <div class="food">
+          <img class="food_images" src="images/food_one.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/medium.png">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/images.jfif">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_four.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/unnamed.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="seven_days">
+        <div class="food">
+          <img class="food_images" src="images/food_one.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/medium.png">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/images.jfif">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_four.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/unnamed.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_five.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_six.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ten_days">
+        <div class="food">
+          <img class="food_images" src="images/food_one.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/medium.png">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/images.jfif">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_four.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/unnamed.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_five.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_six.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_seven.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_eight.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+        <div class="food">
+          <img class="food_images" src="images/food_nine.jpg">
+          <div class="food_text">
+            <p class="about_salat">340г / 443ккал</p>
+            <h3 class="name_food">Зеленый летний салат</h3>
+            <span class="line_red"></span>
+            <h4 class="about_food">Ингредиенты:</h4>
+            <p class="about_salat">Рукола, Айсбкрг, Радичио, Помидоры Черри, Редиска, Лук зеленый, Свежий огурец, Оливковое масло,
+              Петрушка, Сок лимона</p>
+            <h4 class="about_food">БЖУ:</h4>
+            <p class="about_salat">Углеводы: 4 g; Жиры: 5,2 g; Белки: 6,6 g;</p>
+            <h4 class="about_food">Срок хранения:</h4>
+            <p class="about_salat">3 Дней</p>
+            <h4 class="about_food">Температура хранения:</h4>
+            <p class="about_salat">+2˚С +6˚С</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-  <script src="js/index.js"></script>
+  <div class="maps_delivery" id="maps_delivery">
+    <img src="images/maps.jpg" class="maps">
+    <div class="text_maps_delivery">
+      <h4 class="name_maps"><span class="color_text">Доставка</span><br> и оплата</h4>
+      <p class="text_maps"> По Москве в пределах оранжевой зоны доставка бесплатная.</p>
+      <p class="text_maps"> Вы можете выбрать удобный для вас пормежуток доставки от 30 до 60
+      минут (в зависимости от программы) с 6 до 12 дня. В синей зоне доплата
+      составляет 250 рублей за каждую доставку, дополнительный счет пришлет
+      менеджер после оформления заказа</p>
+    </div>
+  </div>
+  <div id="comment">
+    <h4 class="name_comment">Отзывы о нас</h4>
+    <div class="button_three">
+      <a class="prev_two" id="leftBtn" onclick="slide()">&#8592;</a>
+      <a class="next_two" id="rightBtn" onclick="slide()">&#8594;</a>
+    </div>
+    <div class="people">
+      <img src="" class="photo_people">
+      <h5 class="name_people">Мария Винокурова</h5>
+      <p class="text_people">супер, класс, одобряю, не асуждаю</p>
+    </div>
+    <div class="people">
+      <img src="" class="photo_people">
+      <h5 class="name_people">Мария Максимова</h5>
+      <p class="text_people">супер, класс, одобряю, не асуждаю</p>
+    </div><div class="people">
+    <img src="" class="photo_people">
+    <h5 class="name_people">Елизавета Зверева</h5>
+    <p class="text_people">супер, класс, одобряю, не асуждаю</p>
+  </div>
+  </div>
 </body>
 
 </html>
